@@ -1,0 +1,20 @@
+
+Project 01: beanfactory-demo
+
+Remember Class and Object before going to Beans.
+
+BeanFactory(Interface):
+1. A bean is just a Java object created and managed by Spring. BeanFactory is an interface that manages objects called beans. 
+2. BeanFactory is the simplest container in Spring. It reads bean definitions from a configuration (XML, Java code, or annotations). It creates beans only when needed (lazy loading) when you call getBean().
+3. Uses less memory and is faster to start(Lightweight). No advanced features like events or lifecycle callbacks.
+4. Can be used in simple apps or low-resource environments (like mobile).
+5. Configuration Sources used by BeanFactory are	XML, Java, annotations.
+
+ClassPathXmlApplicationContext(Class):
+1. ClassPathXmlApplicationContext loads bean definitions from an XML file in the classpath (like src/main/resources).
+2. ClassPathXmlApplicationContext creates all singleton beans at startup (eager loading).
+3. It supports advanced features like: Bean lifecycle management, Event handling, Internationalization, Integration with other Spring modules (AOP, MVC).
+4. It is useful for legacy systems, but modern apps prefer annotations or Java config.
+5. Configuration Source used by BeanFactory is XML.
+
+
